@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi página combinada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0 20px 40px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0 10px;
+      background: #2980b9;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 0 0 15px 15px;
+    }
+    nav {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #2980b9;
+      color: white;
+    }
+    section {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      background: white;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 15px auto;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #2980b9;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #d0ebff;
+      cursor: default;
+    }
+    a.external-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    a.external-link:hover {
+      background-color: #1f5d91;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenidos a mi sitio web combinado</h1>
+</header>
+
+<nav>
+  <a href="#presentacion">Sobre mí</a>
+  <a href="#horario">Horario de Clases</a>
+  <a href="#pasteles">Cómo preparar pasteles</a>
+  <a href="#clima">Cambio Climático</a>
+</nav>
+
+<section id="presentacion">
+  <h2>Acerca de mí</h2>
+  <p>Me gusta programar, diseñar y aprender nuevas tecnologías.</p>
+  <h3>Mis pasatiempos que hago al día:</h3>
+  <ul>
+    <li>Cuidar de mi hija</li>
+    <li>Escuchar música</li>
+    <li>Dormir</li>
+    <li>Hacer tareas</li>
+    <li>Ayudar a mi mamá</li>
+  </ul>
+  <h3>Imagen de ejemplo de lo que hago</h3>
+  <img src="mi-bebe.jpg" alt="Foto de mi bebé" width="200" height="250" />
+  <img src="lo-que-hago.jpg" alt="Ejemplo de lo que hago" />
+</section>
+
+<section id="horario">
+  <h2>Horario de Clases</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08:00 - 09:00</td>
+        <td>Matemáticas</td>
+        <td>Historia</td>
+        <td>Lengua</td>
+        <td>Física</td>
+        <td>Inglés</td>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00</td>
+        <td>Lengua</td>
+        <td>Matemáticas</td>
+        <td>S.O.P</td>
+        <td>Educación Física</td>
+        <td>Ciencias</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>Inglés</td>
+        <td>Física</td>
+        <td>Historia</td>
+        <td>Lengua</td>
+        <td>Matemáticas</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="pasteles">
+  <h2>Cómo preparar pasteles</h2>
+  <p>Bienvenido o bienvenida, hoy vamos a ver cómo preparar unos pasteles. Selecciona cuál de las dos opciones deseas preparar:</p>
+  <ul>
+    <li><strong>Opción 1:</strong> Pastel de chocolate</li>
+    <li><strong>Opción 2:</strong> Pastel de limón</li>
+  </ul>
+
+  <article>
+    <h3>Pastel de Chocolate</h3>
+    <p>Ingredientes:</p>
+    <ul>
+      <li>1 ¾ tazas de harina de trigo (todo uso)</li>
+      <li>¾ taza de cacao en polvo sin azúcar</li>
+      <li>2 tazas de azúcar</li>
+      <li>1 ½ cucharaditas de polvo de hornear</li>
+      <li>1 cucharadita de sal</li>
+      <li>2 huevos</li>
+      <li>1 taza de leche entera</li>
+      <li>½ taza de aceite vegetal</li>
+      <li>2 cucharaditas de extracto de vainilla</li>
+      <li>1 taza de agua caliente o café caliente (esto intensifica el sabor del chocolate)</li>
+    </ul>
+    <p>Ingredientes para la cobertura:</p>
+    <ul>
+      <li>200 g de chocolate oscuro o semi amargo</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Pastel de Limón</h3>
+    <p>Ingredientes:</p>
+    <ul>
+      <li>2 tazas de harina de trigo (todo uso)</li>
+      <li>1 ½ cucharaditas de polvo de hornear</li>
+      <li>½ cucharadita de sal</li>
+      <li>1 taza de azúcar</li>
+      <li>½ taza de mantequilla (a temperatura ambiente)</li>
+      <li>3 huevos</li>
+      <li>½ taza de leche</li>
+      <li>¼ taza de jugo de limón (natural, recién exprimido)</li>
+      <li>1 cucharada de ralladura de limón</li>
+      <li>1 cucharadita de extracto de vainilla</li>
+    </ul>
+    <p>Ingredientes para el glaseado de limón (opcional):</p>
+    <ul>
+      <li>1 taza de azúcar glass (impalpable)</li>
+    </ul>
+  </article>
+</section>
+
+<section id="clima">
+  <h2>CAMBIOS CLIMÁTICOS QUE HAY EN EL PLANETA</h2>
+  <img src="cambio.jpg" alt="cambios climáticos" width="450" height="340" />
+  <p><strong>Causas del cambio climático:</strong></p>
+  <ul>
+    <li>Quema de combustibles fósiles: La combustión de carbón, petróleo y gas para energía y transporte libera grandes cantidades de dióxido de carbono (CO₂), el principal gas de efecto invernadero.</li>
+    <li>Deforestación: La tala de bosques reduce la capacidad de la Tierra para absorber CO₂, liberando el carbono almacenado en los árboles.</li>
+    <li>Y también puede ser por otras causas.</li>
+  </ul>
+  <p>Para más información:</p>
+  <a class="external-link" href="https://www.ecologiaverde.com/cambios-climaticos-a-lo-largo-de-la-historia-3683.html" target="_blank" rel="noopener noreferrer">
+    Haz clic aquí para informarte más sobre este tema tan importante
+  </a>
+</section>
+
+</body>
+</html>
